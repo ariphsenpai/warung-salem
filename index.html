@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Warung Salem — Beuteng wareg awak jagjag. Warung makan dekat Kampus UMP & UHB Purwokerto. Dine In, Take Away, Pesanan & COD.">
+    <meta name="keywords" content="warung salem, makan purwokerto, warung dekat UMP, kuliner purwokerto, COD makanan kampus">
+    <meta property="og:title" content="Warung Salem — Beuteng Wareg Awak Jagjag">
+    <meta property="og:description" content="Warung makan favorit mahasiswa UMP & UHB. Dine In, Take Away, Pesanan & COD!">
+    <meta property="og:type" content="website">
+    <title>Warung Salem — Beuteng Wareg Awak Jagjag</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav class="navbar" id="navbar">
+    <div class="container nav-container">
+        <a href="#beranda" class="nav-logo">
+            <span class="logo-icon">🍛</span>
+            <span class="logo-text">Warung <span class="text-red">Salem</span></span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+            <li><a href="#menu" class="nav-link">Menu</a></li>
+            <li><a href="#layanan" class="nav-link">Layanan</a></li>
+            <li><a href="#testimoni" class="nav-link">Testimoni</a></li>
+            <li><a href="#lokasi" class="nav-link">Lokasi</a></li>
+            <li><a href="https://wa.me/6282325555585" class="nav-btn" target="_blank"><i class="fab fa-whatsapp"></i> Pesan Sekarang</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="beranda">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <div class="hero-badge">🔥 Warung Favorit Mahasiswa UMP & UHB</div>
+        <h1 class="hero-title">
+            Warung <span class="text-red">Salem</span>
+        </h1>
+        <p class="hero-slogan">"Beuteng wareg awak jagjag"</p>
+        <p class="hero-desc">Makan enak, porsi mantap, harga mahasiswa. Tersedia Dine In, Take Away, Pesanan & COD area kampus!</p>
+        <div class="hero-cta">
+            <a href="#menu" class="btn btn-primary"><i class="fas fa-utensils"></i> Lihat Menu</a>
+            <a href="https://wa.me/6282325555585?text=Halo%20Warung%20Salem%2C%20saya%20mau%20pesan" class="btn btn-outline" target="_blank"><i class="fab fa-whatsapp"></i> Order via WA</a>
+        </div>
+        <div class="hero-info">
+            <div class="hero-info-item">
+                <i class="fas fa-clock"></i>
+                <span>10.00 - 21.00 WIB</span>
+            </div>
+            <div class="hero-info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Belakang Kampus UMP</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll">
+        <a href="#menu"><i class="fas fa-chevron-down"></i></a>
+    </div>
+</section>
+
+<!-- ═══ MENU / KATALOG ═══ -->
+<section class="section" id="menu">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Menu Kami</span>
+            <h2 class="section-title">Pilihan <span class="text-red">Menu Favorit</span></h2>
+            <p class="section-desc">Semua menu dimasak fresh setiap hari dengan bahan berkualitas</p>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="menu-filter">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="makanan">🍛 Makanan</button>
+            <button class="filter-btn" data-filter="minuman">🥤 Minuman</button>
+            <button class="filter-btn" data-filter="snack">🍢 Snack</button>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menuGrid">
+            <!-- Placeholder menu items — akan diganti dengan menu asli dari WA Bisnis -->
+            <div class="menu-card" data-category="makanan">
+                <div class="menu-img">
+                    <div class="menu-img-placeholder"><i class="fas fa-utensils"></i></div>
+                    <span class="menu-badge">Best Seller</span>
+                </div>
+                <div class="menu-info">
+                    <h3>Nasi Goreng Spesial</h3>
+                    <p>Nasi goreng bumbu racikan khas Warung Salem</p>
+                    <div class="menu-bottom">
+                        <span class="menu-price">Rp 15.000</span>
+                        <a href="https://wa.me/6282325555585?text=Pesan%20Nasi%20Goreng%20Spesial" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="makanan">
+                <div class="menu-img">
+                    <div class="menu-img-placeholder"><i class="fas fa-drumstick-bite"></i></div>
+                    <span class="menu-badge hot">Pedas!</span>
+                </div>
+                <div class="menu-info">
+                    <h3>Ayam Geprek</h3>
+                    <p>Ayam geprek sambal bawang level 1-5</p>
+                    <div class="menu-bottom">
+                        <span class="menu-price">Rp 13.000</span>
+                        <a href="https://wa.me/6282325555585?text=Pesan%20Ayam%20Geprek" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="makanan">
+                <div class="menu-img">
+                    <div class="menu-img-placeholder"><i class="fas fa-bowl-rice"></i></div>
+                </div>
+                <div class="menu-info">
+                    <h3>Nasi Rames</h3>
+                    <p>Nasi putih + lauk pilihan + sayur + sambal</p>
+                    <div class="menu-bottom">
+                        <span class="menu-price">Rp 12.000</span>
+                        <a href="https://wa.me/6282325555585?text=Pesan%20Nasi%20Rames" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="minuman">
+                <div class="menu-img">
+                    <div class="menu-img-placeholder"><i class="fas fa-mug-hot"></i></div>
+                </div>
+                <div class="menu-info">
+                    <h3>Es Teh Manis</h3>
+                    <p>Teh manis segar dingin</p>
+                    <div class="menu-bottom">
+                        <span class="menu-price">Rp 5.000</span>
+                        <a href="https://wa.me/6282325555585?text=Pesan%20Es%20Teh%20Manis" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="minuman">
+                <div class="menu-img">
+                    <div class="menu-img-placeholder"><i class="fas fa-glass-water"></i></div>
+                </div>
+                <div class="menu-info">
+                    <h3>Es Jeruk</h3>
+                    <p>Jeruk peras segar + es batu</p>
+                    <div class="menu-bottom">
+                        <span class="menu-price">Rp 7.000</span>
+                        <a href="https://wa.me/6282325555585?text=Pesan%20Es%20Jeruk" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="snack">
+                <div class="menu-img">
+                    <div class="menu-img-placeholder"><i class="fas fa-cookie-bite"></i></div>
+                </div>
+                <div class="menu-info">
+                    <h3>Gorengan</h3>
+                    <p>Tempe mendoan, tahu isi, bakwan</p>
+                    <div class="menu-bottom">
+                        <span class="menu-price">Rp 2.000</span>
+                        <a href="https://wa.me/6282325555585?text=Pesan%20Gorengan" class="menu-order" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-note">
+            <p><i class="fas fa-info-circle"></i> Menu & harga dapat berubah sewaktu-waktu. Untuk menu lengkap, hubungi kami via WhatsApp.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ LAYANAN ═══ -->
+<section class="section section-dark" id="layanan">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Layanan</span>
+            <h2 class="section-title">Cara <span class="text-red">Menikmati</span> Warung Salem</h2>
+            <p class="section-desc">Pilih cara yang paling nyaman buat kamu</p>
+        </div>
+
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-chair"></i></div>
+                <h3>Dine In</h3>
+                <p>Makan di tempat dengan suasana warung yang nyaman. Tersedia meja untuk ngobrol bareng temen!</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-bag-shopping"></i></div>
+                <h3>Take Away</h3>
+                <p>Bungkus dan bawa pulang. Cocok buat yang sibuk kuliah tapi tetap mau makan enak.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-clipboard-list"></i></div>
+                <h3>Terima Pesanan</h3>
+                <p>Pesan dalam jumlah banyak untuk acara, kumpul bareng, atau arisan. Hubungi via WA!</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-motorcycle"></i></div>
+                <h3>COD</h3>
+                <p>Antar langsung ke kampus UMP & UHB. Bayar di tempat. Minimum order berlaku.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ TESTIMONI ═══ -->
+<section class="section" id="testimoni">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Testimoni</span>
+            <h2 class="section-title">Kata <span class="text-red">Mereka</span></h2>
+            <p class="section-desc">Apa kata pelanggan setia Warung Salem</p>
+        </div>
+
+        <div class="testi-grid">
+            <div class="testi-card">
+                <div class="testi-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="testi-text">"Porsinya banyak, harganya mahasiswa banget. Ayam gepreknya juara! Sambelnya nampol tapi nagih."</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">A</div>
+                    <div>
+                        <strong>Andi</strong>
+                        <span>Mahasiswa UMP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testi-card">
+                <div class="testi-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="testi-text">"Tempatnya strategis, di belakang kampus. Cocok banget buat makan siang. COD-nya juga cepet!"</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">S</div>
+                    <div>
+                        <strong>Sari</strong>
+                        <span>Mahasiswi UHB</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testi-card">
+                <div class="testi-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="testi-text">"Langganan dari semester 1. Nasi ramesnya komplit dan murah. Mbak Ika-nya juga ramah banget."</p>
+                <div class="testi-author">
+                    <div class="testi-avatar">R</div>
+                    <div>
+                        <strong>Rizki</strong>
+                        <span>Mahasiswa UMP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ LOKASI ═══ -->
+<section class="section section-dark" id="lokasi">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Lokasi</span>
+            <h2 class="section-title">Temukan <span class="text-red">Kami</span></h2>
+            <p class="section-desc">Gampang ditemukan, dekat kampus!</p>
+        </div>
+
+        <div class="location-grid">
+            <div class="location-info">
+                <div class="location-item">
+                    <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h4>Alamat</h4>
+                        <p>Jl. Tegal Mulya, Gerbang Belakang Kampus UMP, Ledug, Kembaran, Purwokerto</p>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-icon"><i class="fas fa-clock"></i></div>
+                    <div>
+                        <h4>Jam Buka</h4>
+                        <p>Setiap Hari: 10.00 - 21.00 WIB</p>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-icon"><i class="fab fa-whatsapp"></i></div>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/6282325555585">0823-2555-5585</a></p>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-icon"><i class="fab fa-instagram"></i></div>
+                    <div>
+                        <h4>Instagram</h4>
+                        <p><a href="https://www.instagram.com/warung_salem" target="_blank">@warung_salem</a></p>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-icon"><i class="fas fa-truck"></i></div>
+                    <div>
+                        <h4>Area COD</h4>
+                        <p>Kampus UMP & UHB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="location-map">
+                <!-- Placeholder — ganti dengan Google Maps embed setelah link tersedia -->
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Google Maps</p>
+                    <a href="https://maps.google.com/?q=Warung+Salem+Purwokerto" target="_blank" class="btn btn-primary btn-sm">
+                        <i class="fas fa-directions"></i> Buka di Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ CTA BANNER ═══ -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Laper? Langsung Pesan Aja! 🔥</h2>
+            <p>Order via WhatsApp, tinggal pilih menu, bayar di tempat. Gampang!</p>
+            <a href="https://wa.me/6282325555585?text=Halo%20Warung%20Salem%2C%20saya%20mau%20pesan" class="btn btn-cta" target="_blank">
+                <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3><span class="logo-icon">🍛</span> Warung <span class="text-red">Salem</span></h3>
+                <p>"Beuteng wareg awak jagjag"</p>
+                <p class="footer-desc">Warung makan favorit mahasiswa Purwokerto. Porsi mantap, harga bersahabat!</p>
+            </div>
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
+                    <li><a href="#lokasi">Lokasi</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Kontak</h4>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6282325555585">0823-2555-5585</a></p>
+                <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/warung_salem" target="_blank">@warung_salem</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Belakang Kampus UMP, Purwokerto</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Warung Salem. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/6282325555585?text=Halo%20Warung%20Salem%2C%20saya%20mau%20pesan" class="wa-float" target="_blank" aria-label="Chat WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
