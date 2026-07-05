@@ -888,3 +888,23 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
     .menu-grid { grid-template-columns: 1fr; }
     .service-grid { grid-template-columns: 1fr; }
 }
+
+/* ═══ UMKM BADGE ═══ */
+.umkm-badge {
+    background: linear-gradient(135deg, var(--red) 0%, #ff4b4b 100%);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.4);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.footer-brand h3 .umkm-badge {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    margin-right: 8px;
+}
