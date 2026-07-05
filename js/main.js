@@ -1,3 +1,11 @@
+// ── Force Scroll to Top on Refresh ──
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.onload = function() {
+    window.scrollTo(0, 0);
+};
+
 /* ═══════════════════════════════════════
    WARUNG SALEM — JavaScript
    Navigation, Filter, Scroll Animations
