@@ -100,13 +100,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     animateElements.forEach(el => observerAnim.observe(el));
 
-    // ── Smooth scroll for anchor links ──
+        // ── Smooth scroll for anchor links ──
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            const target = document.querySelector(this.getAttribute('href'));
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const target = document.querySelector(targetId);
             if (target) {
                 e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth' });
+                // Close mobile menu if open
+                navMenu.classList.remove('open');
+                navToggle.classList.remove('active');
+                
+                // Calculate position with offset for fixed navbar
+                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                const targetPosition = target.getBoundingClientRect().top + window.scrollY - navbarHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
             }
         });
     });
