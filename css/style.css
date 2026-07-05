@@ -729,7 +729,7 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1.5fr 1fr;
     gap: 40px;
     padding-bottom: 32px;
 }
@@ -908,3 +908,33 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
     padding: 3px 8px;
     margin-right: 8px;
 }
+
+/* ═══ PAYMENT METHODS ═══ */
+.footer-payment h4 {
+    color: var(--white);
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.pay-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    width: fit-content;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.pay-badge i {
+    color: #25D366;
+}
+.pay-badge:nth-child(2) i { color: #3b82f6; }
+.pay-badge:nth-child(3) i { color: #f43f5e; }
